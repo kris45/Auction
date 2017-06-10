@@ -1,0 +1,17 @@
+.search {
+    background: #d6e784;
+    padding: 20px;
+
+    select,
+    input,
+    button {
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin-right: 50px;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+}
