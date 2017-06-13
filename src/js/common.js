@@ -78,31 +78,6 @@ $(document).ready(function () {
     });
 
 
-/* Sign up button */
-
-    $('#signUpBtn').click(function() {
-        console.log($("#signUp-form").serializeArray());
-        $.ajax({
-            url: 'http://localhost:8080/user/signup/',
-            type: "POST",
-            data : $("#signUp-form").serializeArray(),
-            crossDomain: true,
-            cache: false,
-            dataType: 'jsonp',
-            success: function (data) {
-                console.log("User has been registered successfully");
-            },
-            error: function(xhr){
-                console.log(JSON.stringify(xhr));
-            }
-        });
-    });
-
-    function loadImages() {
-
-    }
-
-
 /* Share fb tw */
 
     $('#fb').click(function() {
@@ -161,7 +136,7 @@ $(document).ready(function () {
         {name: "THREE COMPARTMENT COMMERICIAL SINK", price: 27, endDate: new Date(2017, 5, 18, 14), src: "img/block/kitchen/lot3.png", category: "kitchen"},
     ];
 
-/*sort by price  */
+/* sort by price  */
 
     sortByPrice(allLots, 'asc');
     displayLots(allLots);
@@ -265,8 +240,5 @@ $(document).ready(function () {
         }
         return filteredLots;
     }
-
-
-
 
  });
