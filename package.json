@@ -1,21 +1,23 @@
 {
-  "name": "auction",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Khrystyna Salo",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.18.12",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglifyjs": "^0.6.2",
-    "gulp-webserver": "^0.9.1"
-  }
+    "name": "auction",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Khrystyna Salo",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.18.12",
+        "gulp": "^3.9.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-sass": "^3.1.0",
+        "gulp-uglifyjs": "^0.6.2",
+        "gulp-webserver": "^0.9.1",
+        "express": "^4.15.3",
+        "express-fileupload": "^0.1.3",
+        "fs": "0.0.1-security",
+        "sqlite3": "^3.1.8"
+    }
 }

@@ -11,11 +11,64 @@
 	float: none;
 }
 
-/* HEADER */
+/* Authorization*/
 
-.auth {
+#auth {
     text-align: right;
+    padding-top: 20px;
+
+    a {
+        font-size: 15px;
+        color: #fff;
+        background: $blue;
+        padding: 5px;
+        border: 2px solid black;
+    }
 }
+
+#logIn-block, #signUp-block {
+    display: none;
+    position: absolute;
+    background: rgba(17, 17, 17, .8);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+
+    form {
+        margin: 40px auto;
+        width: 300px;
+        background: #fff;
+        @include border-radius(10px);
+        font-size: 15px;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    input {
+        margin: 10px 0 20px;
+        width: 200px;
+        height: 25px;
+    }
+
+    input[type~="submit"] {
+        color: #fff;
+        background: $blue;
+        height: 30px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    .form-block {
+        margin: 0 auto;
+        width: 230px;
+        padding: 30px;
+    }
+}
+
+
+/* HEADER */
 
 .heads {
     color: $grey;
@@ -34,7 +87,7 @@
     h2 {
         font-size: 10px;
         position: absolute;
-        top: 65px
+        top: 80px
     }
 }
 
@@ -44,6 +97,7 @@ nav {
     background: $blue;
     position: relative;
     z-index: 20;
+    width: 960px;
 }
 
 .menu li {
@@ -151,7 +205,7 @@ nav {
     color: #fff;
     padding: 10px;
     text-align: center;
-    border-radius: 10px;
+    @include border-radius (10px);
 }
 
 /* STICK MENU */

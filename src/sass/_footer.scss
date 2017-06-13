@@ -1,0 +1,74 @@
+#map {
+    height: 400px;
+    width: 400px;
+}
+
+footer {
+    .container {
+        background: #dedede;
+        padding: 20px 0 10px;
+        text-align: center;
+        position: relative;
+
+        h5 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+}
+
+
+
+.contacts {
+    position: absolute;
+    left: 500px;
+    background: #fff;
+    padding: 20px;
+    text-align: left;
+    @include border-radius (20px);
+    border: 3px solid grey;
+    font-weight: 600;
+
+    p {
+        padding: 20px 0 10px;
+        font-size: 13px;
+
+        a {
+            color: #000;
+            span {
+                color: #0e1eb0;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+/*#phone::before {
+    content: url(../img/phone.png);
+}*/
+
+.share {
+    position: absolute;
+    left: 500px;
+    top: 360px;
+}
+
+#fb, #tw {
+    width: 50px;
+    display: inline-block;
+    height: 50px;
+    background: url(../img/sprite.png) no-repeat;
+    cursor: pointer;
+    float: left;
+}
+
+#fb {
+    background-position: 0;
+}
+
+#tw {
+    background-position: -50px;
+}
