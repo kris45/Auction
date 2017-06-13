@@ -16,8 +16,8 @@ gulp.task('sass', function () {
 });
 gulp.task('scripts', function () {
     return gulp.src([
-        'src/libs/jquery/dist/jquery.min.js',
-        'src/libs/lodash/dist/lodash.min.js',
+        'src/libs/jquery/jquery.min.js',
+        'src/libs/lodash/lodash.min.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

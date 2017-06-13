@@ -2,6 +2,7 @@
  * Created by My on 09.06.2017.
 */
 
+
 $(document).ready(function () {
 
 /* Slider */
